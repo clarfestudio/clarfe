@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description"
+        content="Serviços da Clarfe: Estratégia, conteúdo e design aplicados para construir presenças digitais inteligentes e que convertem.">
+    <meta name="keywords"
+        content="estratégia de conteúdo, branding, design, planejamento digital, marketing orgânico, Clarfe, agência de conteúdo">
+    <meta name="author" content="Clarfe">
+    <meta property="og:title" content="Clarfe • Serviços">
+    <meta property="og:description"
+        content="Conheça os serviços da Clarfe: um ecossistema integrado de estratégia, conteúdo e design para marcas que buscam autoridade.">
+    <meta property="og:image" content="https://www.clarfe.com.br/assets/ogimage.jpg">
+    <meta property="og:url" content="https://www.clarfe.com.br/servicos.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Clarfe • Serviços</title>
+    <link rel="icon" href="Favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="Favicon/apple-touch-icon.png">
+    <link rel="manifest" href="Favicon/web-app-manifest-192x192.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+            font-family: 'Helvetica';
+            src: url('Fonts/Helvetica.ttf');
+        }
+
+        @font-face {
+            font-family: 'Helvetica-Bold';
+            src: url('Fonts/Helvetica-Bold.ttf');
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica-Bold', sans-serif;
+            background-color: #FFFFFF;
+            color: #000000;
+            cursor: url('iconecursor.cur'), auto;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 2rem 2rem 8rem 0;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            margin: 0;
+        }
+
+        .logo img {
+            display: block;
+            width: 200px;
+            height: auto;
+            margin-left: 0;
+        }
+
+        nav {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        nav a.active {
+            color: rgba(0, 0, 0, 0.3);
+            pointer-events: none;
+        }
+
+        .insta-icon {
+            padding-top: 4px;
+            width: 18px;
+            height: auto;
+        }
+
+        .mobile-menu,
+        .mobile-menu-toggle {
+            display: none;
+        }
+
+        .text-wrapper {
+            padding-left: 4rem;
+            padding-right: 2rem;
+            max-width: 720px;
+            margin-top: 6rem;
+        }
+
+        .text-wrapper p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .divider {
+            border-top: 1px solid #000;
+            margin: 3rem 4rem;
+        }
+
+        .columns {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0 4rem;
+        }
+
+        .column {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .column h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .column hr {
+            border: none;
+            border-top: 2px solid #000;
+            width: 40px;
+            margin: 0 0 1rem 0;
+        }
+
+        .column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .column ul li {
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                position: absolute;
+                top: 2rem;
+                right: 2rem;
+                background: none;
+                border: none;
+                font-size: 2rem;
+                font-weight: bold;
+                cursor: pointer;
+                display: block;
+                line-height: 1;
+            }
+
+            .mobile-menu-toggle::before {
+                content: '≡';
+            }
+
+            .mobile-menu {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background-color: #FFFFFF;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-start;
+                padding: 0 2rem 4rem 2rem;
+                box-sizing: border-box;
+                display: none;
+            }
+
+            .mobile-menu.active {
+                display: flex;
+            }
+
+            .mobile-menu a {
+                font-size: 1.5rem;
+                font-weight: bold;
+                text-decoration: none;
+                color: #000;
+                margin-bottom: 1rem;
+            }
+
+            .mobile-menu a:hover {
+                color: rgba(0, 0, 0, 0.5);
+            }
+
+            .mobile-menu a:last-child {
+                color: rgba(0, 0, 0, 0.6);
+                font-size: 1.2rem;
+                font-weight: normal;
+                margin-top: 2rem;
+            }
+
+            .logo img {
+                width: 210px;
+            }
+
+            .text-wrapper {
+                padding-left: 4rem;
+                padding-right: 2rem;
+                margin-top: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="CLARFEStudio_Logotipo.svg" alt="Logotipo da Clarfe">
+        </div>
+
+        <nav>
+            <a href="sobre.html">sobre</a>
+            <a href="servicos.html" class="active">serviços</a>
+            <a href="contato.html">contato</a>
+            <a href="https://www.instagram.com/clarfe__/" target="_blank">
+                <img src="instagram.svg" alt="Instagram Clarfe" class="insta-icon">
+            </a>
+        </nav>
+
+        <button class="mobile-menu-toggle" aria-label="Abrir menu mobile"
+            onclick="document.querySelector('.mobile-menu').classList.toggle('active')">
+        </button>
+
+        <div class="mobile-menu">
+            <a href="sobre.html">sobre</a>
+            <a href="servicos.html" class="active">serviços</a>
+            <a href="contato.html">contato</a>
+            <a href="https://www.instagram.com/clarfe__/" target="_blank">Siga a Clarfe no Instagram</a>
+        </div>
+
+        <div class="text-wrapper">
+            <p>A estratégia é o diagnóstico essencial que antecede qualquer ação digital. Na Clarfe mapeamos todos os
+                aspectos do seu negócio — identidade, operação, cultura, público e canais — para definir com precisão o
+                posicionamento da sua marca e quais ações são de fato eficazes para gerar resultados crescentes.</p>
+            <p>Além disso, sabemos que uma estratégia brilhante exige operação impecável. Este serviço é o sistema
+                central do seu conteúdo, por isso monitoramos cada ação mediante rastreamento de métricas em tempo real
+                e auditorias de coerência de voz, garantindo alinhamento absoluto com seus objetivos primários. Esse
+                gerenciamento contínuo evita desvios e assegura que sua marca mantenha a rota traçada mesmo em meio a
+                mudanças de mercados.</p>
+            <p>Transformamos dados em decisões proativas através de controle rigoroso de métricas, gestão de riscos com
+                planos de contingência para cenários imprevistos, revisão periódica de alinhamento criativo e pivotagem
+                ágil de campanhas baseada em comportamento do consumidor. O resultado é um ecossistema digital
+                autorregulado que reduz desperdícios direcionando investimentos apenas para o que funciona, enquanto
+                adaptamos sua presença online a novas tendências.</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="columns">
+            <div class="column">
+                <h3>Estratégia</h3>
+                <hr>
+                <ul>
+                    <li>Posicionamento & Valor</li>
+                    <li>Benchmark & Território</li>
+                    <li>Tom de Voz</li>
+                    <li>Blueprint de Conteúdo</li>
+                    <li>Plano Editorial</li>
+                    <li>Fluxo de Trabalho</li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h3>Conteúdo</h3>
+                <hr>
+                <ul>
+                    <li>Narrativa Estratégica</li>
+                    <li>Linha Editorial</li>
+                    <li>Multiformatos</li>
+                    <li>Gestão de Canais</li>
+                    <li>Métricas & Otimização</li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h3>Design</h3>
+                <hr>
+                <ul>
+                    <li>Direção de Arte</li>
+                    <li>Identidade Visual</li>
+                    <li>Key Visuals</li>
+                    <li>Templates & Assets</li>
+                    <li>Edição de vídeo</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

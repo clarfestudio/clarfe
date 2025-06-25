@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for SEO and responsiveness -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLARFE Studio – Data Protection Policy</title>
+    <meta name="description"
+        content="CLARFE Studio Personal Data Protection Policy – Transparency, security, and privacy of your data in compliance with GDPR and LGPD." />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./Favicon/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="./Favicon/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./Favicon/apple-touche-icon.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./Favicon/favicon-96x96.png" />
+    <link rel="manifest" href="./Favicon/web-app-manifest-192x192.png" />
+
+    <!-- Helvetica font definition -->
+    <style>
+        @font-face {
+            font-family: "Helvetica";
+            src: url("./Fonts/Helvetica/Helvetica.ttf") format("truetype");
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Helvetica";
+            src: url("./Fonts/Helvetica-Oblique/Helvetica-Oblique.ttf") format("truetype");
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: "Helvetica";
+            src: url("./Fonts/Helvetica-Bold/Helvetica-Bold.ttf") format("truetype");
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Helvetica";
+            src: url("./Fonts/Helvetica-BoldOblique/Helvetica-BoldOblique.ttf") format("truetype");
+            font-weight: 700;
+            font-style: italic;
+        }
+    </style>
+
+    <!-- Main styles -->
+    <style>
+        /* === UPDATED HEADER === */
+        /* Header main container */
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 2rem 2rem 0 0;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        .logo {
+            margin: 0;
+        }
+
+        .logo img {
+            display: block;
+            width: 200px;
+            height: auto;
+        }
+
+        nav {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        nav a.active {
+            color: rgba(0, 0, 0, 0.3);
+            pointer-events: none;
+        }
+
+        .insta-icon {
+            padding-top: 4px;
+            width: 18px;
+            height: auto;
+        }
+
+        .mobile-menu,
+        .mobile-menu-toggle {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 1rem 1rem 0 1rem;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                position: absolute;
+                top: 2rem;
+                right: 2rem;
+                background: none;
+                border: none;
+                font-size: 2rem;
+                font-weight: bold;
+                cursor: pointer;
+                display: block;
+                line-height: 1;
+            }
+
+            .mobile-menu-toggle::before {
+                content: '≡';
+            }
+
+            .mobile-menu {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background-color: #FFFFFF;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-start;
+                padding: 0 2rem 4rem 2rem;
+                box-sizing: border-box;
+                display: none;
+            }
+
+            .mobile-menu.active {
+                display: flex;
+            }
+
+            .mobile-menu a {
+                font-size: 1.5rem;
+                font-weight: bold;
+                text-decoration: none;
+                color: #000;
+                margin-bottom: 1rem;
+            }
+
+            .mobile-menu a:hover {
+                color: rgba(0, 0, 0, 0.5);
+            }
+
+            .mobile-menu a:last-child {
+                color: rgba(0, 0, 0, 0.6);
+                font-size: 1.2rem;
+                font-weight: normal;
+                margin-top: 2rem;
+            }
+
+            .logo img {
+                width: 210px;
+            }
+        }
+
+        /* === Reset and general settings === */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            min-height: 100vh;
+            font-family: "Helvetica", sans-serif;
+            background-color: #FFFFFF;
+            color: #1A1A1A;
+            overscroll-behavior: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Custom cursor (desktop only) */
+        @media (min-width: 769px) {
+            body {
+                cursor: url("./iconecursor.cur"), auto;
+            }
+        }
+
+        /* === Main container === */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        /* === Data protection content === */
+        main.content {
+            width: 100%;
+            max-width: 1200px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            margin-top: 4rem;
+            /* Space after header */
+        }
+
+        /* === Introduction section (title + paragraph) === */
+        .intro-section {
+            display: flex;
+            gap: 4rem;
+        }
+
+        .intro-section .left-col {
+            flex-shrink: 0;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .intro-section .left-col h1 {
+            font-family: "Helvetica", sans-serif;
+            font-weight: 700;
+            font-size: 2rem;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+            margin-top: -1rem;
+            /* aligns title bottom with text top */
+        }
+
+        .intro-section .right-col p {
+            font-family: "Helvetica", sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            letter-spacing: -0.5px;
+            text-align: justify;
+            margin-bottom: 1rem;
+        }
+
+        .intro-section .right-col p strong {
+            font-weight: 700;
+            letter-spacing: normal;
+        }
+
+        /* === Numbered sections (1 to 7) === */
+        .section {
+            display: flex;
+            gap: 4rem;
+        }
+
+        .section .left-col {
+            flex-shrink: 0;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section .left-col .section-number {
+            font-family: "Helvetica", sans-serif;
+            font-weight: 700;
+            font-size: 1.25rem;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .section .left-col .section-title {
+            font-family: "Helvetica", sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+        }
+
+        .section .right-col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .section .right-col p {
+            font-family: "Helvetica", sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            letter-spacing: -0.5px;
+            text-align: justify;
+            margin-bottom: 1rem;
+        }
+
+        .section .right-col ul {
+            margin-left: 1rem;
+            list-style: disc;
+            font-family: "Helvetica", sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            letter-spacing: -0.5px;
+            margin-bottom: 1rem;
+        }
+
+        .section .right-col p strong {
+            font-weight: 700;
+            letter-spacing: normal;
+        }
+
+        /* === Responsiveness === */
+        @media (max-width: 768px) {
+
+            /* Content adjustments */
+            main.content {
+                padding: 1.5rem;
+                gap: 2.5rem;
+                margin-top: 2rem;
+                /* Reduce space on mobile */
+            }
+
+            /* Stacked sections */
+            .intro-section,
+            .section {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .intro-section .left-col,
+            .section .left-col {
+                width: auto;
+            }
+
+            .intro-section .left-col h1 {
+                font-size: 1.75rem;
+                margin-top: 0;
+            }
+
+            .intro-section .right-col p,
+            .section .right-col p,
+            .section .right-col ul {
+                font-size: 0.975rem;
+                line-height: 1.4rem;
+                letter-spacing: -0.5px;
+                margin-bottom: 1rem;
+            }
+
+            .section .left-col .section-number {
+                font-size: 1.15rem;
+            }
+
+            .section .left-col .section-title {
+                font-size: 0.975rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- UPDATED HEADER (same as services.html) -->
+        <div class="header-container">
+            <div class="logo">
+                <img src="CLARFEStudio_Logotipo.svg" alt="Clarfe Studio Logo">
+            </div>
+
+            <nav>
+                <a href="about.html">about</a>
+                <a href="services.html">services</a>
+                <a href="contact.html">contact</a>
+                <a href="https://www.instagram.com/clarfe__/" target="_blank">
+                    <img src="instagram.svg" alt="Clarfe Instagram" class="insta-icon">
+                </a>
+            </nav>
+
+            <button class="mobile-menu-toggle" aria-label="Open mobile menu"
+                onclick="document.querySelector('.mobile-menu').classList.toggle('active')">
+            </button>
+
+            <div class="mobile-menu">
+                <a href="about.html">about</a>
+                <a href="services.html">services</a>
+                <a href="contact.html">contact</a>
+                <a href="https://www.instagram.com/clarfe__/" target="_blank">Follow Clarfe on Instagram</a>
+            </div>
+        </div>
+
+        <!-- Main content (translated) -->
+        <main class="content">
+            <!-- Introduction Section -->
+            <div class="intro-section">
+                <div class="left-col">
+                    <h1>
+                        Personal<br />
+                        Data<br />
+                        Protection Policy
+                    </h1>
+                </div>
+                <div class="right-col">
+                    <p>
+                        <strong>CLARFE Digital Marketing Agency</strong>, committed to transparency, security, and
+                        privacy of its users, provides this Data Protection Policy to inform how your personal data is
+                        collected, used, stored, and protected, in compliance with the <strong>Brazilian General Data
+                            Protection Law (LGPD - Law No. 13.709/2018)</strong> and its updates until 2025.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Section 1 -->
+            <div class="section">
+                <div class="left-col">
+                    <div class="section-number">1.</div>
+                    <div class="section-title">Personal Data<br />Collected</div>
+                </div>
+                <div class="right-col">
+                    <p>When filling out our contact form, we collect the following personal data:</p>
+                    <ul>
+                        <li>Full name;</li>
+                        <li>CPF (Brazilian Tax ID);</li>
+                        <li>Email;</li>
+                        <li>Phone and WhatsApp;</li>
+                        <li>Profession;</li>
+                        <li>Message with the reason for contact;</li>
+                    </ul>
+                    <p>This data is voluntarily provided by you and is essential for us to assist you properly.</p>
+                </div>
+            </div>
+
+            <!-- Section 2 -->
+            <div class="section">
+                <div class="left-col">
+                    <div class="section-number">2.</div>
+                    <div class="section-title">Purpose of<br />Processing</div>
+                </div>
+                <div class="right-col">
+                    <p>The information provided will be used for the following purposes:</p>
+                    <ul>
+                        <li>Contacting you through our commercial team to handle requests for quotes, proposals, and
+                            clarifications about our services;</li>
+                        <li>Sending communications related to our services, including <strong>emails, WhatsApp messages,
+                                updates, offers, informational content, and commercial and marketing actions</strong>;
+                        </li>
+                        <li>Improving our communication with you in a personalized way based on your demonstrated
+                            interest;</li>
+                        <li>Compliance with legal or regulatory obligations when applicable.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section 3 -->
+            <div class="section">
+                <div class="left-col">
+                    <div class="section-number">3.</div>
+                    <div class="section-title">Legal Basis for<br />Processing</div>
+                </div>
+                <div class="right-col">
+                    <p>The processing of your personal data is based on the following legal grounds provided by LGPD:
+                    </p>
+                    <ul>
+                        <li><strong>Consent of the data subject</strong>, provided freely, informed, and unequivocally;
+                        </li>
+                        <li><strong>Legitimate interest of CLARFE</strong>, in developing its commercial and marketing
+                            activities, respecting the fundamental rights and freedoms of the data subject.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section 4 -->
+            <div class="section">
+                <div class="left-col">
+                    <div class="section-number">4.</div>
+                    <div class="section-title">Data<br />Sharing</div>
+                </div>
+                <div class="right-col">
+                    <p><strong>CLARFE does not share, sell, or transfer your data to unauthorized third
+                            parties.</strong>
+                        Occasionally, your data may be shared with service providers contracted by CLARFE, exclusively
+                        for technical operation purposes, always under contractual confidentiality and security
+                        obligations.</p>
+                </div>
+            </div>
+
+            <!-- Section 5 -->
+            <div class="section">
+                <div class="left-col">
+                    <div class="section-number">5.</div>
+                    <div class="section-title">Storage and<br />Security</div>
+                </div>
+                <div class="right-col">
+                    <p>Your data is stored in a secure environment with restricted access and appropriate technologies
+                        to
+                        protect information against unauthorized access, leaks, loss, or alteration. Data will be
+                        maintained for the period necessary to fulfill the purposes above or until eventual revocation
+                        of
+                        consent.</p>
+                </div>
+            </div>
+
+            <!-- Section 6 -->
+            <div class="section">
+                <div class="left-col">
+                    <div class="section-number">6.</div>
+                    <div class="section-title">Your Rights</div>
+                </div>
+                <div class="right-col">
+                    <p>Under LGPD, you have the right to:</p>
+                    <ul>
+                        <li>Confirm the existence of processing;</li>
+                        <li>Access, correct, update, or request deletion of your data;</li>
+                        <li>Revoke consent at any time, without prejudice to the legality of previous processing;</li>
+                        <li>Request data portability and limitation of its use;</li>
+                    </ul>
+                    <p>To exercise your rights, contact us by email: <strong>clarfe@clarfe.com.br</strong></p>
+                </div>
+            </div>
+
+            <!-- Section 7 -->
+            <div class="section">
+                <div class="left-col">
+                    <div class="section-number">7.</div>
+                    <div class="section-title">Consent</div>
+                </div>
+                <div class="right-col">
+                    <p>By submitting your data through this website, you declare that you have read, understood, and
+                        agree with this Data Protection Policy, expressly consenting to the processing of your
+                        information under the terms described herein.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

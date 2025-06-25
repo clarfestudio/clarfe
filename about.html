@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <!-- Updated to focus on strategic keywords -->
+    <meta name="description"
+        content="Clarfe is a strategic content agency that acts as an intelligence hub for brands, projects, and businesses. Specialists in organic performance, branding, and customer loyalty." />
+    <meta name="keywords"
+        content="content marketing, branding, strategic agency, organic content, customer loyalty, Clarfe, brand intelligence, content that converts" />
+    <meta name="author" content="Clarfe Content Agency" />
+    <meta property="og:title" content="Clarfe • Strategic Content Agency" />
+    <meta property="og:description"
+        content="We transform brands into authorities through strategic content, organic performance, and positioning intelligence." />
+    <meta property="og:image" content="https://www.clarfe.com.br/assets/ogimage.jpg" />
+    <!-- adjust to your featured image -->
+    <meta property="og:url" content="https://www.clarfe.com.br/about.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Clarfe • About</title>
+    <link rel="icon" href="Favicon/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="Favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="Favicon/web-app-manifest-192x192.png" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        @font-face {
+            font-family: 'Helvetica';
+            src: url('Fonts/Helvetica.ttf');
+        }
+
+        @font-face {
+            font-family: 'Helvetica-Bold';
+            src: url('Fonts/Helvetica-Bold.ttf');
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica-Bold', sans-serif;
+            background-color: #FFFFFF;
+            color: #000000;
+            cursor: url('iconecursor.cur'), auto;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            height: 100vh;
+            padding: 2rem 2rem 8rem 0;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            margin: 0;
+        }
+
+        .logo img {
+            display: block;
+            width: 200px;
+            height: auto;
+            margin-left: 0;
+        }
+
+        nav {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        nav a.active {
+            color: rgba(0, 0, 0, 0.3);
+            pointer-events: none;
+        }
+
+        .insta-icon {
+            padding-top: 4px;
+            width: 18px;
+            height: auto;
+        }
+
+        .text-wrapper {
+            padding-left: 4rem;
+            max-width: 720px;
+            margin-top: 6rem;
+        }
+
+        .text-wrapper p {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+        }
+
+        .mobile-menu,
+        .mobile-menu-toggle {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                position: absolute;
+                top: 2rem;
+                right: 2rem;
+                background: none;
+                border: none;
+                font-size: 2rem;
+                font-weight: bold;
+                cursor: pointer;
+                display: block;
+                line-height: 1;
+            }
+
+            .mobile-menu-toggle::before {
+                content: '≡';
+                /* hamburger icon */
+            }
+
+            .mobile-menu {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background-color: #FFFFFF;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-start;
+                padding: 0 2rem 4rem 2rem;
+                box-sizing: border-box;
+                display: none;
+            }
+
+            .mobile-menu.active {
+                display: flex;
+            }
+
+            .mobile-menu a {
+                font-size: 1.5rem;
+                font-weight: bold;
+                text-decoration: none;
+                color: #000;
+                margin-bottom: 1rem;
+            }
+
+            .mobile-menu a:hover {
+                color: rgba(0, 0, 0, 0.5);
+            }
+
+            .mobile-menu a:last-child {
+                color: rgba(0, 0, 0, 0.6);
+                font-size: 1.2rem;
+                font-weight: normal;
+                margin-top: 2rem;
+            }
+
+            .logo img {
+                width: 210px;
+            }
+
+            .text-wrapper {
+                padding-left: 4rem;
+                padding-right: 2rem;
+                margin-top: 3rem;
+                padding-bottom: 6rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="CLARFEStudio_Logotipo.svg" alt="Clarfe logo, strategic content agency" />
+        </div>
+
+        <nav>
+            <a href="about.html" class="active">about</a>
+            <a href="solutions.html">solutions</a>
+            <a href="contact.html">contact</a>
+            <a href="https://www.instagram.com/clarfe__/" target="_blank" rel="noopener noreferrer">
+                <img src="instagram.svg" alt="Clarfe Instagram" class="insta-icon" />
+            </a>
+        </nav>
+
+        <button class="mobile-menu-toggle" aria-label="Open mobile menu"
+            onclick="document.querySelector('.mobile-menu').classList.toggle('active')">
+        </button>
+
+        <div class="mobile-menu">
+            <a href="about.html" class="active">about</a>
+            <a href="solutions.html">solutions</a>
+            <a href="contact.html">contact</a>
+            <a href="https://www.instagram.com/clarfe__/" target="_blank" rel="noopener noreferrer">Follow Clarfe on
+                Instagram</a>
+        </div>
+
+        <div class="text-wrapper">
+            <p>Clarfe is a strategic content agency that operates as an intelligence hub for brands, projects, and
+                businesses. Our mission is to strengthen your positioning and organically lead your audience—from first
+                interest to a genuine connection and loyal engagement.</p>
+            <p>Before taking any action, we dive deep into your purpose, audience behavior, market landscape, cultural
+                references, and operational dynamics. This solid foundation informs every phase—from planning to
+                execution—ensuring consistency, relevance, and impact.</p>
+            <p>As a result, beyond sustainable growth, our approach brings financial efficiency—reducing acquisition
+                costs and making customer relationships more valuable over time.</p>
+        </div>
+    </div>
+</body>
+
+</html>
